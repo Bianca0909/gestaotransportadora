@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class FornecedorEntity extends PessoaJuridicaEntity {
 	private String site;
 
-	public FornecedorEntity(String name, LocalDate birthday, String cnpj, String site) {
+	public FornecedorEntity(String name, String birthday, String cnpj, String site) {
 		super(name, birthday, cnpj);
 		this.site = site;
 	}

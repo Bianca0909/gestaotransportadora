@@ -1,13 +1,17 @@
 package br.com.devti.gestaotransportadora.entity;
 
-public class ClienteEntity {
+import java.time.LocalDate;
+
+public class ClienteEntity extends PessoaFisicaEntity{
 	private String email;
 
-	public ClienteEntity(String email) {
-		super();
+	public ClienteEntity(String name, String birthday, String cpf, String email) {
+		super(name, birthday, cpf);
 		this.email = email;
 	}
-
+   public ClienteEntity() {
+	
+   }
 	public String getEmail() {
 		return email;
 	}
@@ -15,5 +19,6 @@ public class ClienteEntity {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
 
 }

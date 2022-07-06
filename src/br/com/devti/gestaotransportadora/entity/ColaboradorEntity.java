@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class ColaboradorEntity extends PessoaFisicaEntity {
 	private String pis;
 
-	public ColaboradorEntity(String name, LocalDate birthday, String cpf, String pis) {
+	public ColaboradorEntity(String name, String birthday, String cpf, String pis) {
 		super(name, birthday, cpf);
 		this.pis = pis;
 	}

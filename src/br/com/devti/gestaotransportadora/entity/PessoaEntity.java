@@ -4,13 +4,16 @@ import java.time.LocalDate;
 
 public abstract class PessoaEntity {
 	private String name;
-	private LocalDate birthday;
+	private String birthday;
 	
-	public PessoaEntity(String name, LocalDate birthday) {
+	public PessoaEntity(String name, String birthday) {
 		this.name = name;
 		this.birthday = birthday;
 	}
 
+	public PessoaEntity() {
+		
+	}
 	public String getName() {
 		return name;
 	}
@@ -19,11 +22,11 @@ public abstract class PessoaEntity {
 		this.name = name;
 	}
 
-	public LocalDate getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
 
-	public void setBirthday(LocalDate birthday) {
+	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
 
